@@ -19,7 +19,17 @@
    ```
 2. docker-compose를 이용하여 서버를 오픈합니다.
    ```bash
-   $ docker-compose up
+   $ docker-compose up -d
+   ```
+
+## Access in mongodb
+3. docker container 내부로 접속합니다.
+   ```bash
+   $ docker exec -it mongodb bash
+   ```
+4. mongodb에 접속합니다.
+   ```bash
+   $ mongo
    ```
 
 ## Exit or Termination
